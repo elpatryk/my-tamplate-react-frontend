@@ -6,6 +6,23 @@
   height: 40vmin;
   pointer-events: none;
 }
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#menu-toggle:checked ~ ul {
+  display: block;
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
